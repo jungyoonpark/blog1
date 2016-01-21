@@ -1,0 +1,12 @@
+diff a/app/elements/routing.html b/app/elements/routing.html	(rejected hunks)
+@@ -58,6 +58,10 @@
+       app.route = 'contact';
+     });
+ 
++    page('/resume', function() {
++      app.route = 'resume';
++    });
++
+     // 404
+     page('*', function() {
+       app.$.toast.text = 'Can\'t find: ' + window.location.href  + '. Redirected you to Home Page';
